@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BB536EABDB68C71FFCBF6A8 /* Pods_JustDoIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8A75B6CC1A68F529D7E835 /* Pods_JustDoIt.framework */; };
 		F130B5911E3D581B001682D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5901E3D581B001682D6 /* AppDelegate.swift */; };
 		F130B5931E3D581B001682D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5921E3D581B001682D6 /* ViewController.swift */; };
 		F130B5961E3D581B001682D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F130B5941E3D581B001682D6 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		F130B5B41E3D581B001682D6 /* JustDoItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5B31E3D581B001682D6 /* JustDoItUITests.swift */; };
 		F130B5C41E433750001682D6 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5C31E433750001682D6 /* CreateTaskViewController.swift */; };
 		F130B5C61E45937F001682D6 /* CompleteTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5C51E45937F001682D6 /* CompleteTaskViewController.swift */; };
+		F1A61D661E45C3B30016BECD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F1A61D651E45C3B30016BECD /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16933E3F60E418233CA4CC4E /* Pods-JustDoIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustDoIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustDoIt/Pods-JustDoIt.release.xcconfig"; sourceTree = "<group>"; };
+		5C8A75B6CC1A68F529D7E835 /* Pods_JustDoIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustDoIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2C82F0B8C92CCE24DA89596 /* Pods-JustDoIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustDoIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustDoIt/Pods-JustDoIt.debug.xcconfig"; sourceTree = "<group>"; };
 		F130B58D1E3D581B001682D6 /* JustDoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustDoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F130B5901E3D581B001682D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F130B5921E3D581B001682D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 		F130B5B51E3D581B001682D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F130B5C31E433750001682D6 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		F130B5C51E45937F001682D6 /* CompleteTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTaskViewController.swift; sourceTree = "<group>"; };
+		F1A61D651E45C3B30016BECD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB536EABDB68C71FFCBF6A8 /* Pods_JustDoIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60A5012442C195B9458D1885 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C8A75B6CC1A68F529D7E835 /* Pods_JustDoIt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		727B1D3A269CB91ECFEFED4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2C82F0B8C92CCE24DA89596 /* Pods-JustDoIt.debug.xcconfig */,
+				16933E3F60E418233CA4CC4E /* Pods-JustDoIt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F130B5841E3D581B001682D6 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +111,8 @@
 				F130B5A71E3D581B001682D6 /* JustDoItTests */,
 				F130B5B21E3D581B001682D6 /* JustDoItUITests */,
 				F130B58E1E3D581B001682D6 /* Products */,
+				727B1D3A269CB91ECFEFED4C /* Pods */,
+				60A5012442C195B9458D1885 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +133,7 @@
 				F130B5921E3D581B001682D6 /* ViewController.swift */,
 				F130B5C31E433750001682D6 /* CreateTaskViewController.swift */,
 				F130B5C51E45937F001682D6 /* CompleteTaskViewController.swift */,
+				F1A61D651E45C3B30016BECD /* Podfile */,
 				F130B5941E3D581B001682D6 /* Main.storyboard */,
 				F130B59A1E3D581B001682D6 /* Assets.xcassets */,
 				F130B59C1E3D581B001682D6 /* LaunchScreen.storyboard */,
@@ -141,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F130B5B81E3D581B001682D6 /* Build configuration list for PBXNativeTarget "JustDoIt" */;
 			buildPhases = (
+				5FA79A06563CDA9D5D07EF1B /* [CP] Check Pods Manifest.lock */,
 				F130B5891E3D581B001682D6 /* Sources */,
 				F130B58A1E3D581B001682D6 /* Frameworks */,
 				F130B58B1E3D581B001682D6 /* Resources */,
+				C401402620FE5CD930EFFE98 /* [CP] Embed Pods Frameworks */,
+				EAF7660762AD210639F7C171 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +273,7 @@
 			files = (
 				F130B59E1E3D581B001682D6 /* LaunchScreen.storyboard in Resources */,
 				F130B59B1E3D581B001682D6 /* Assets.xcassets in Resources */,
+				F1A61D661E45C3B30016BECD /* Podfile in Resources */,
 				F130B5961E3D581B001682D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +293,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FA79A06563CDA9D5D07EF1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C401402620FE5CD930EFFE98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustDoIt/Pods-JustDoIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF7660762AD210639F7C171 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustDoIt/Pods-JustDoIt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F130B5891E3D581B001682D6 /* Sources */ = {
@@ -422,6 +501,7 @@
 		};
 		F130B5B91E3D581B001682D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2C82F0B8C92CCE24DA89596 /* Pods-JustDoIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JustDoIt/Info.plist;
@@ -434,6 +514,7 @@
 		};
 		F130B5BA1E3D581B001682D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16933E3F60E418233CA4CC4E /* Pods-JustDoIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JustDoIt/Info.plist;
