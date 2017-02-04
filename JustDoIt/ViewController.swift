@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var tasks : [Task] = []
-    var selectedIndex = 0
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -19,7 +18,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        tasks = makeTask()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getTasks()
+        
+        tableView.reloadData()
         
     }
     
@@ -33,11 +38,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let task = tasks[indexPath.row]
         
         if task.important {
-            
-            cell.textLabel?.text = "‼️\(task.name)"
-            
+            cell.textLabel?.text = "‼️\(task.name!)"
         } else {
-            cell.textLabel?.text = task.name
+            cell.textLabel?.text = task.name!
         }
         
         
@@ -47,31 +50,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        selectedIndex = indexPath.row
+        
         let task = tasks[indexPath.row]
         
         performSegue(withIdentifier: "selectTaskSegue", sender: task)
     }
     
-    func makeTask() -> [Task] {
-        
-        let task1 = Task()
-        task1.name = "Walk"
-        task1.important = false
-        
-        let task2 = Task()
-        task2.name = "Talk"
-        task2.important = true
-        
-        let task3 = Task()
-        task3.name = "Chalk"
-        task3.important = false
-        
-        return [task1, task2, task3]
-        
-        
-        
-    }
     
     @IBAction func plusTapped(_ sender: UIBarButtonItem) {
         
@@ -79,23 +63,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    func getTasks() {
         
-        if segue.identifier == "showSegue" {
-            
-            
-            let nextVC = segue.destination as! CreateTaskViewController
-            nextVC.previousVC = self
-            
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        do{
+        
+            tasks = try context.fetch(Task.fetchRequest()) as! [Task]
+        
+        } catch {
+            print("Ooops! Error")
         }
         
-        if segue.identifier == "selectTaskSegue" {
+    
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "selectTaskSegue"
+            {
             
             let nextVC = segue.destination as! CompleteTaskViewController
             nextVC.task = sender as! Task
-            nextVC.previousVC = self
+          
             
-        }
+            }
         
     }
     
