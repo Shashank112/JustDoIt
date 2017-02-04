@@ -15,6 +15,9 @@
 		F130B59E1E3D581B001682D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F130B59C1E3D581B001682D6 /* LaunchScreen.storyboard */; };
 		F130B5A91E3D581B001682D6 /* JustDoItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5A81E3D581B001682D6 /* JustDoItTests.swift */; };
 		F130B5B41E3D581B001682D6 /* JustDoItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5B31E3D581B001682D6 /* JustDoItUITests.swift */; };
+		F130B5C21E3D8A99001682D6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5C11E3D8A99001682D6 /* Task.swift */; };
+		F130B5C41E433750001682D6 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5C31E433750001682D6 /* CreateTaskViewController.swift */; };
+		F130B5C61E45937F001682D6 /* CompleteTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5C51E45937F001682D6 /* CompleteTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		F130B5AF1E3D581B001682D6 /* JustDoItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustDoItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F130B5B31E3D581B001682D6 /* JustDoItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustDoItUITests.swift; sourceTree = "<group>"; };
 		F130B5B51E3D581B001682D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F130B5C11E3D8A99001682D6 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		F130B5C31E433750001682D6 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		F130B5C51E45937F001682D6 /* CompleteTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,10 @@
 			children = (
 				F130B5901E3D581B001682D6 /* AppDelegate.swift */,
 				F130B5921E3D581B001682D6 /* ViewController.swift */,
+				F130B5C51E45937F001682D6 /* CompleteTaskViewController.swift */,
 				F130B5941E3D581B001682D6 /* Main.storyboard */,
+				F130B5C31E433750001682D6 /* CreateTaskViewController.swift */,
+				F130B5C11E3D8A99001682D6 /* Task.swift */,
 				F130B59A1E3D581B001682D6 /* Assets.xcassets */,
 				F130B59C1E3D581B001682D6 /* LaunchScreen.storyboard */,
 				F130B59F1E3D581B001682D6 /* Info.plist */,
@@ -262,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F130B5C21E3D8A99001682D6 /* Task.swift in Sources */,
 				F130B5991E3D581B001682D6 /* JustDoIt.xcdatamodeld in Sources */,
+				F130B5C61E45937F001682D6 /* CompleteTaskViewController.swift in Sources */,
 				F130B5931E3D581B001682D6 /* ViewController.swift in Sources */,
 				F130B5911E3D581B001682D6 /* AppDelegate.swift in Sources */,
+				F130B5C41E433750001682D6 /* CreateTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +521,7 @@
 				F130B5BA1E3D581B001682D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F130B5BB1E3D581B001682D6 /* Build configuration list for PBXNativeTarget "JustDoItTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +530,7 @@
 				F130B5BD1E3D581B001682D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F130B5BE1E3D581B001682D6 /* Build configuration list for PBXNativeTarget "JustDoItUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +539,7 @@
 				F130B5C01E3D581B001682D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
