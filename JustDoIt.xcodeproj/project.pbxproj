@@ -232,6 +232,7 @@
 				TargetAttributes = {
 					F130B58C1E3D581B001682D6 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DD682XTCB4;
 						ProvisioningStyle = Automatic;
 					};
 					F130B5A31E3D581B001682D6 = {
@@ -504,6 +505,7 @@
 			baseConfigurationReference = B2C82F0B8C92CCE24DA89596 /* Pods-JustDoIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DD682XTCB4;
 				INFOPLIST_FILE = JustDoIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shash.App2.JustDoIt;
@@ -517,6 +519,7 @@
 			baseConfigurationReference = 16933E3F60E418233CA4CC4E /* Pods-JustDoIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DD682XTCB4;
 				INFOPLIST_FILE = JustDoIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shash.App2.JustDoIt;
