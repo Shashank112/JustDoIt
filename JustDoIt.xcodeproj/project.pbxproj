@@ -18,6 +18,7 @@
 		F130B5B41E3D581B001682D6 /* JustDoItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5B31E3D581B001682D6 /* JustDoItUITests.swift */; };
 		F130B5C41E433750001682D6 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5C31E433750001682D6 /* CreateTaskViewController.swift */; };
 		F130B5C61E45937F001682D6 /* CompleteTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130B5C51E45937F001682D6 /* CompleteTaskViewController.swift */; };
+		F18C2ADC1E4DD00200D372DA /* jdimark.png in Resources */ = {isa = PBXBuildFile; fileRef = F18C2ADB1E4DD00200D372DA /* jdimark.png */; };
 		F1A61D661E45C3B30016BECD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F1A61D651E45C3B30016BECD /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		F130B5B51E3D581B001682D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F130B5C31E433750001682D6 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		F130B5C51E45937F001682D6 /* CompleteTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTaskViewController.swift; sourceTree = "<group>"; };
+		F18C2ADB1E4DD00200D372DA /* jdimark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jdimark.png; sourceTree = "<group>"; };
 		F1A61D651E45C3B30016BECD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				F1A61D651E45C3B30016BECD /* Podfile */,
 				F130B5941E3D581B001682D6 /* Main.storyboard */,
 				F130B59A1E3D581B001682D6 /* Assets.xcassets */,
+				F18C2ADB1E4DD00200D372DA /* jdimark.png */,
 				F130B59C1E3D581B001682D6 /* LaunchScreen.storyboard */,
 				F130B59F1E3D581B001682D6 /* Info.plist */,
 				F130B5971E3D581B001682D6 /* JustDoIt.xcdatamodeld */,
@@ -275,6 +278,7 @@
 				F130B59E1E3D581B001682D6 /* LaunchScreen.storyboard in Resources */,
 				F130B59B1E3D581B001682D6 /* Assets.xcassets in Resources */,
 				F1A61D661E45C3B30016BECD /* Podfile in Resources */,
+				F18C2ADC1E4DD00200D372DA /* jdimark.png in Resources */,
 				F130B5961E3D581B001682D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

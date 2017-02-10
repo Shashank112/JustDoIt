@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +20,30 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JustDoIt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ie-dC-fW8">
+                                <rect key="frame" x="7" y="40" width="361.5" height="80"/>
+                                <color key="backgroundColor" red="0.84268589989874432" green="0.87896985974293629" blue="0.89902640417747692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="kjH-MN-EL8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="106"/>
+                                <color key="textColor" red="0.032830663595148794" green="0.1121997644763843" blue="0.78645898666478653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jdimark.png" translatesAutoresizingMaskIntoConstraints="NO" id="udV-SE-hmw">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Ie-dC-fW8" firstAttribute="centerX" secondItem="udV-SE-hmw" secondAttribute="centerX" id="0pU-Im-Mmw"/>
+                            <constraint firstItem="udV-SE-hmw" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="60O-6T-IqS"/>
+                            <constraint firstItem="7Ie-dC-fW8" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="20" id="V34-oh-Al7"/>
+                            <constraint firstItem="udV-SE-hmw" firstAttribute="top" secondItem="7Ie-dC-fW8" secondAttribute="bottom" id="fk9-gQ-4SL"/>
+                            <constraint firstAttribute="trailing" secondItem="udV-SE-hmw" secondAttribute="trailing" id="tRW-Uf-gyB"/>
+                            <constraint firstItem="udV-SE-hmw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="xTu-G0-Qns"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +51,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="jdimark.png" width="300" height="300"/>
+    </resources>
 </document>
